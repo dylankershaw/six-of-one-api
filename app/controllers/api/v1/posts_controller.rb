@@ -1,6 +1,10 @@
 class Api::V1::PostsController < ApplicationController
-    def create        
-        post = Post.new(title: params["title"], slug: params["slug"])
+    def update
+        post = Post.find_by(slug: params["slug"])
+        post.title = params["title"]
+        post.slug = params["newSlug"]
+        post.save
+
         render json: post
     end
 
