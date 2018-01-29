@@ -5,7 +5,7 @@ Post.create([
     }, 
     { 
         title: "We don't get offered crises, they arrive.", 
-        slug: "we-dont-get-offered-crises-they-arrive "
+        slug: "we-dont-get-offered-crises-they-arrive"
     }, 
     { 
         title: "I have seen the future and it doesn't work.", 
